@@ -45,13 +45,13 @@ function keyPressed(){
 
   //For moving and changing animation write code here
 
-  if(keycode === LEFT_ARROW){
+  if(keycode == LEFT_ARROW){
       Mouse.addAnimation("mouseTeasing",mouseimg2);
       mouse.changeAnimation("mouseTeasing");
       mouse.frameDelay = 25;
   }
 
-   if(keycode === RIGHT_ARROW){
+   if(keycode == RIGHT_ARROW){
      cat.addAnimation("catRunning",catimg2);
      cat.changeAnimation("catRunning");
    }
