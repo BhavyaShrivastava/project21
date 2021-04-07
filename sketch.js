@@ -7,8 +7,8 @@ function preload() {
 bgImg = loadImage("images/garden.png");
 catimg1 = loadAnimation("images/cat1.png");
 mouseimg1 = loadAnimation("images/mouse1.png");
-catimg2 = loadAnimation("images/cat2.png,images/cat3.png");
-mouseimg2 = loadAnimation("images/mouse2.png,images/mouse3.png");
+catimg2 = loadAnimation("images/cat2.png","images/cat3.png");
+mouseimg2 = loadAnimation("images/mouse2.png","images/mouse3.png");
 catimg3 = loadAnimation("images/cat4.png");
 mouseimg3 = loadAnimation("images/mouse4.png");
 
@@ -45,13 +45,13 @@ function keyPressed(){
 
   //For moving and changing animation write code here
 
-  if(keycode == LEFT_ARROW){
+  if(keyDown(LEFT_ARROW)){
       Mouse.addAnimation("mouseTeasing",mouseimg2);
       mouse.changeAnimation("mouseTeasing");
       mouse.frameDelay = 25;
   }
 
-   if(keycode == RIGHT_ARROW){
+   if(keyDown(RIGHT_ARROW)){
      cat.addAnimation("catRunning",catimg2);
      cat.changeAnimation("catRunning");
    }
