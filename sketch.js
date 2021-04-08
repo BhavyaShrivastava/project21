@@ -17,11 +17,11 @@ mouseimg3 = loadAnimation("images/mouse4.png");
 function setup(){
     createCanvas(1000,800);
     //create tom and jerry sprites here
-  mouse = createSprite(800,600,10,10);
+  mouse = createSprite(400,600,10,10);
   mouse.addAnimation( "mouseimage" ,mouseimg1);
   mouse.scale = 0.2;
 
-  cat = createSprite(400,600,10,10);
+  cat = createSprite(800,600,10,10);
   cat.addAnimation( "catimage" ,catimg1);
   cat.scale = 0.2;
 
@@ -55,6 +55,7 @@ function keyPressed(){
    if(keyDown(RIGHT_ARROW)){
      cat.addAnimation("catRunning",catimg2);
      cat.changeAnimation("catRunning");
+     cat.frameDelay = 25;  
    }
 
 
