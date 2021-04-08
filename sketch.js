@@ -19,10 +19,11 @@ function setup(){
     //create tom and jerry sprites here
   mouse = createSprite(800,600,10,10);
   mouse.addAnimation( "mouseimage" ,mouseimg1);
+  mouse.scale = 0.2;
 
   cat = createSprite(400,600,10,10);
   cat.addAnimation( "catimage" ,catimg1);
-
+  cat.scale = 0.2;
 
 }
 
