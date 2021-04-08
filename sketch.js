@@ -47,7 +47,7 @@ function keyPressed(){
   //For moving and changing animation write code here
 
   if(keyDown(LEFT_ARROW)){
-      Mouse.addAnimation("mouseTeasing",mouseimg2);
+      mouse.addAnimation("mouseTeasing",mouseimg2);
       mouse.changeAnimation("mouseTeasing");
       mouse.frameDelay = 25;
   }
