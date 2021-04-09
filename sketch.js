@@ -55,6 +55,7 @@ function keyPressed(){
    if(keyDown(RIGHT_ARROW)){
      cat.addAnimation("catRunning",catimg2);
      cat.changeAnimation("catRunning");
+      cat.velocityX = -3 
      cat.frameDelay = 25;  
    }
 
