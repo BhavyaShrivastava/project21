@@ -21,7 +21,7 @@ function setup(){
   mouse.addAnimation( "mouseimage" ,mouseimg3);
   mouse.scale = 0.2;
 
-  cat = createSprite(800,600,10,10);
+  cat = createSprite(500,600,10,10);
   cat.addAnimation( "catimage" ,catimg1);
   cat.scale = 0.2;
 
