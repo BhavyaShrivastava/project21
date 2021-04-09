@@ -18,7 +18,7 @@ function setup(){
     createCanvas(1000,800);
     //create tom and jerry sprites here
   mouse = createSprite(400,600,10,10);
-  mouse.addAnimation( "mouseimage" ,mouseimg2);
+  mouse.addAnimation( "mouseimage" ,mouseimg3);
   mouse.scale = 0.2;
 
   cat = createSprite(800,600,10,10);
