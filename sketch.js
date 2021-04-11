@@ -21,7 +21,7 @@ function setup(){
   mouse.addAnimation( "mouseimage" ,mouseimg1);
   mouse.scale = 0.2;
 
-  cat = createSprite(500,600,10,10);
+  cat = createSprite(800,600,10,10);
   cat.addAnimation( "catimage" ,catimg1);
   cat.scale = 0.2;
 
@@ -35,6 +35,7 @@ function draw() {
 if(cat.x - mouse.x < (cat.width - mouse.width)/2){
   cat.addAnimation("catsite",catimg3);
   mouse.addAnimation("mousehappy",mouseimg3);
+  cat.velocityX = 0;  
 }
 
 
