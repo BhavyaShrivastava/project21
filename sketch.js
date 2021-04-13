@@ -37,7 +37,7 @@ function draw() {
     background(bgImg);
     //Write condition here to evalute if tom and jerry collide
 
-if(cat.x - mouse.x < (cat.width - mouse.width)/2){
+if(cat.x - mouse.x < (cat.width/2 - mouse.width)/2){
   cat.changeAnimation("catsite",catimg3);
   mouse.changeAnimation("mousehappy",mouseimg3);
   cat.velocityX = 0;  
