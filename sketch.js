@@ -38,8 +38,10 @@ function draw() {
     //Write condition here to evalute if tom and jerry collide
 
 if(cat.x - mouse.x < cat.width/2 + mouse.width/2){
-  cat.changeAnimation("catsite",catimg3);
-  mouse.changeAnimation("mousehappy",mouseimg3);
+  cat.addAnimation("catsite",catimg3);
+   cat.changeAnimation("catsite"); 
+  mouse.addAnimation("mousehappy",mouseimg3);
+  mouse.changeAnimation("mousehappy");  
   cat.velocityX = 0;  
 }
 
